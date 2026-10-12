@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Binding of Isaac: Repentance — Full Character Roster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="hero">
+    <span class="hero-kicker">the full roster</span>
+    <h1>Every Character in The Binding of Isaac: Repentance</h1>
+    <p class="sub">All 17 regular characters — stats, starting loadouts, how to unlock them, and one tip each. Tap a name to open it up.</p>
+    <div class="hero-counts">
+      <span><b>17</b> characters</span>
+    </div>
+  </div>
+
+  <div class="controls">
+    <input type="text" class="search-input" id="searchInput" placeholder="Search a name, tag, or item…" aria-label="Search characters">
+  </div>
+
+  <h2 class="section-heading">Characters <span class="count">(17)</span></h2>
+  <div class="box" id="regularBox">
+    <div class="box-torn" aria-hidden="true"></div>
+    <div id="regularList"></div>
+  </div>
+
+  <div class="empty-state hidden" id="emptyState">nothing in the item pool matches that</div>
+
+  <footer>Stats and unlocks reflect The Binding of Isaac: Repentance.</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

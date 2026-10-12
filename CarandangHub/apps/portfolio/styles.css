@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("Images/Background2.jpg") no-repeat center center fixed;
+  background-size: cover;   
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-transform: uppercase;
+}
+
+.logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #facc15; 
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none; 
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  display: block;          
+  width: fit-content;      
+  margin: 10px auto;      
+  padding: 10px 20px;
+  background-color: #facc15;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+header h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+header h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #ccc;
+  margin-top: 10px;
+}
+header h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fcfbf9;
+}
+header img {
+  margin-top: 20px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffeb3b;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+#about p {
+  font-size: 18px;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  max-width: 600px;
+  margin: auto;
+}
+
+#projects {
+  text-align: center;
+}
+.project {
+  display: inline-block;
+  margin: 20px;
+}
+.project img {
+  width: 250px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.project img:hover {
+  transform: scale(1.50);
+}
+.project p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea, form button {
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+form input, form textarea {
+  background: #222;
+  color: #fff;
+}
+form button {
+  background: #ffeb3b;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  opacity: 0.9;
+}
+a, button {
+  transition: all 0.3s ease;
+}
+
+#social-links {
+  text-align: center; 
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.social-icon.facebook {
+  background: #1877f2;
+}
+
+.social-icon.facebook:hover {
+  background: #145dbf;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #111;
+  color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  animation: fadeIn 0.5s ease;
+}
+
+.close-btn {
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffeb3b;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}

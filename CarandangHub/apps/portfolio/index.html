@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 1</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Vincent Niño E. Carandang </div>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">My Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Welcome!</h2>
+      <p>Thanks for visiting my portfolio </p>
+    </div>
+  </div>
+
+  <header>
+    <h1>Hi! I am</h1>
+    <h2> Vincent Niño E. Carandang</h2>
+    <img src="Images/Me2.png" alt="Me">
+     <div id="social-links">
+      <a href="https://www.facebook.com/vincentnino.carandang" target="_blank" class="social-icon facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>Detail-oriented Information Technology student with hands-on experience in web development, programming, databases, and technical troubleshooting. Skilled in PHP, MySQL, Java, Python, HTML, CSS, and JavaScript, with project experience in frontend development, testing, and documentation. Also experienced in graphic design and administrative work through work immersion, with TESDA NC II certification in Computer Systems Servicing. A team-oriented problem solver eager to apply and develop technical skills in a professional IT environment.</p>
+  </section>
+
+  <section id="projects">
+    <h3>My Projects</h3>
+
+  <!-- 1st Project -->
+     <div class="project">
+      <h4>INSTITUTIONAL EVENT PLANNER</h4>
+      <img src="Images/MainFrame.png" alt="Project Screenshot">
+      <p>This project offers a user-friendly platform designed to streamline the planning, management, and monitoring of institutional events. It helps organize various events efficiently by providing accessible tools for scheduling, tracking, and coordinating details in one place.</p>
+    </div>
+
+    <!-- 2nd Project -->
+    <div class="project">
+      <h4>OBSTACLE GAME</h4>
+      <img src="Images/Game3.png" alt="Project Screenshot">
+      <a href="https://raijin-neo.itch.io/test" target="_blank" class="btn primary">
+        Click here to play
+      </a>
+      <p>An interactive game aimed at enhancing reflexes and decision-making abilities. Players navigate through obstacles, testing and improving their quick-thinking skills. The game promotes fun while offering a challenge for those looking to sharpen their reaction time and strategic choices.</p>
+    </div>
+
+    <!-- 3rd Project -->
+    <div class="project">
+      <h4>CAPSTONE PROJECT</h4>
+      <img src="Images/udm_radar.png" alt="Project Screenshot">
+       <p>UDM-RADAR is a role-based academic decision-support platform for early risk detection, projected GWA analysis, grade governance, academic-support interventions, and institutional reporting. The system brings together official academic records, prediction services, Faculty review, Student acknowledgment, Admin oversight, and permanent audit history.</p>
+    </div>
+
+    <!-- 4th Project -->
+    <div class="project">
+      <h4>SOFTDEV PROJECT</h4>
+      <img src="Images/cyber_defender.png" alt="Project Screenshot">
+      <p>A cybersecurity simulation game for Android, built in Godot 4 as a group project for our Software Development subject (Universidad de Manila, College of Computing Studies, 2024-2025).</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

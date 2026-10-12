@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#093a96">
+  <title>Carandang-Hub</title>
+  <link rel="icon" type="image/png" href="assets/v_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="css/marketplace.css">
+</head>
+<body>
+
+  <canvas id="wallpaper" aria-hidden="true"></canvas>
+
+  <header id="topbar">
+    <div id="notices" aria-live="polite"></div>
+    <div id="status">
+      <div class="profile">
+        <button id="profilebtn" class="me" type="button" aria-label="Open profile" aria-haspopup="menu" aria-expanded="false">
+          <img id="avatar" alt=""><span id="username"></span>
+        </button>
+        <div id="profilemenu" class="menu" role="menu" hidden>
+          <button id="profile-signout" type="button" role="menuitem">Sign out</button>
+        </div>
+      </div>
+      <div class="trophies" id="trophies"></div>
+      <time id="clock"></time>
+    </div>
+  </header>
+
+  <main id="home">
+    <nav id="functions" aria-label="System">
+      <button id="powerbtn" class="fn" type="button" aria-label="Power" aria-haspopup="menu" aria-expanded="false"></button>
+      <div id="powermenu" class="menu" role="menu" hidden></div>
+    </nav>
+
+    <section id="row" aria-label="Apps">
+      <div id="track"></div>
+    </section>
+
+    <section id="detail">
+      <h1 id="dtitle" aria-live="polite"></h1>
+      <p id="ddesc"></p>
+      <button id="startbtn" class="btn primary" type="button"></button>
+    </section>
+  </main>
+
+  <div id="app-slot"></div>
+  <div id="probe" aria-hidden="true"></div>
+
+  <footer id="hints"></footer>
+
+  <div id="boot" hidden></div>
+  <div id="off" hidden>
+    <p>Carandang-Hub is turned off.<br><small>Press any key or click to turn it on.</small></p>
+  </div>
+
+  <noscript><p style="position:fixed;inset:0;z-index:200;background:#062060;color:#fff;padding:24px;font:18px sans-serif">This site needs JavaScript turned on.</p></noscript>
+
+  <script src="js/core.js"></script>
+  <script src="js/wallpaper.js"></script>
+  <script src="js/marketplace.js"></script>
+  <script src="js/desktop.js"></script>
+  <script type="module" src="js/firebase-init.js"></script>
+</body>
+</html>
